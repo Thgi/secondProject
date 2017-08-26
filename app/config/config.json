@@ -32,15 +32,15 @@
  
     "production": {
  
-        "username": "ykjdxng3dieerny9",
+        "username": "o1u2aimuuayptp7l",
  
-        "password": "nui5rvr3yuund2c9",
+        "password": "eiw2h815uxi6ee24",
  
         "database": "sequelize_passport",
 
         "port": 3306,
  
-        "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 
         "use_env_variable": "JAWSDB_URL",
  
