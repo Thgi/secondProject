@@ -4,7 +4,9 @@
  
         "username": "root",
  
-        "password": "",
+        "password": "root",
+
+        "port":8889,
  
         "database": "sequelize_passport",
  
@@ -30,9 +32,9 @@
  
     "production": {
  
-        "username": "l8c1qu5xsbgggjo7",
+        "username": "o1u2aimuuayptp7l",
  
-        "password": "qsah64523c0upwx0",
+        "password": "eiw2h815uxi6ee24",
  
         "database": "sequelize_passport",
 
