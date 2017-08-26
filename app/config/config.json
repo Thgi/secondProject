@@ -3,49 +3,28 @@
     "development": {
  
         "username": "root",
- 
         "password": "root",
-
         "port":8889,
- 
         "database": "sequelize_passport",
- 
         "host": "127.0.0.1",
- 
         "dialect": "mysql"
- 
     },
- 
+
     "test": {
- 
         "username": "",
- 
         "password": null,
- 
         "database": "",
- 
         "host": "",
- 
         "dialect": "mysql"
- 
     },
- 
-    "production": {
- 
+        "production": {
         "username": "o1u2aimuuayptp7l",
- 
         "password": "eiw2h815uxi6ee24",
- 
         "database": "sequelize_passport",
-
         "port": 3306,
- 
         "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-
         "use_env_variable": "JAWSDB_URL",
- 
         "dialect": "mysql"
- 
     }
  
 }
