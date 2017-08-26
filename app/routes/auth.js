@@ -22,7 +22,7 @@ module.exports = function(app, passport) {
 
 
 app.get("/", function(req, res) {
-res.redirect("/signin");
+  res.redirect("/signin");
 })
 
 // Get request to obtain Appointments table data for insertion to dashboard calendar
