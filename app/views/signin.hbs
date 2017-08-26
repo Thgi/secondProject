@@ -19,26 +19,22 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!-- Link to Custom CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+ <!--  <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
 
 
 
-    <!-- Custom styles for this template -->
-    <link href="/../public/css/authstyle.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="/../public/css/authstyle.css" rel="stylesheet">
+</head>
 
-
-
-
-  </head>
-
-  <style>
+<style>
 
 body{
   background-color: transparent;
@@ -82,68 +78,56 @@ nav{
 
 }
 .text-muted{
-  color:yellow;
+  color:white;
 }
 h3{
   color:white;
   margin-top: 30px;
+  text-align: center;
 }
 .login{
-  color:yellow;
+  color:white;
 }
 .text, .password{
-  color:yellow;
+  color:white;
 }
-
-
+.text{
+ background-color: yellow;
+}
 
 
 </style>
-
-
-
-  <!-- <body> -->
-
-    
-
-      <div class="header clearfix">
-      <h3>Rush Hour</h3>
-        <nav>
-          <ul class="nav nav-pills float-right">
-          {{#if user}}
-            <li class="nav-item"><a class="nav-link active" href="/">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/users/logout">Logout</a></li>
-            {{else}}
-            <li class="nav-item"><a class="nav-link active"  href="/dashboard">Login</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/signup">Register</a></li>
-            {{/if}}
-            
-          </ul>
-        </nav>
-        <!-- <h3 class="text-muted" id="logo">Rush Hour</h3> -->
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          {{!-- {{{body}}} --}}<center>
-        <div class="row">
-          <img src="bbs.jpg">
-        </div>
-      </center>
-        </div>
-
-        
-      </div>
-
+<!-- <body> -->
+<div class="header clearfix">
+  <h3>Rush Hour</h3>
+    <nav>
+      <ul class="nav nav-pills float-right">
+        {{#if user}}
+          <li class="nav-item"><a class="nav-link active" href="/">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/users/logout">Logout</a></li>
+        {{else}}
+          <li class="nav-item"><a class="nav-link active"  href="/dashboard">Login</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/signup">Register</a></li>
+          {{/if}}
+      </ul>
+    </nav>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    {{!-- {{{body}}} --}}<center>
+    <div class="row">
+   <!--  <img src="bbs.jpg"> -->
     </div>
-
-    <form id="signin" name="signin" method="post" action="signin">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="email" />
-        <label for="password">Password</label>
-        <input class="password" name="password" type="password" />
-        <input class="btn" type="submit" value="Sign In" />
-    </form> <!-- /container -->
+    </center>
+  </div>
+</div>
+<form id="signin" name="signin" method="post" action="signin">
+  <label for="email">Email Address</label>
+    <input class="text" name="email" type="email" />
+  <label for="password">Password</label>
+    <input class="password" name="password" type="password" />
+    <input class="btn" type="submit" value="Sign In" />
+</form> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript

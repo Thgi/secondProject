@@ -1,4 +1,4 @@
-$.backstretch("images/bbs.jpg");
+// $.backstretch("images/bbs.jpg");
 
 
 

@@ -26,22 +26,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
 
 
 
     <!-- Custom styles for this template -->
     <link href="/../public/css/authstyle.css" rel="stylesheet">
-
-
-
-
-  </head>
-
-  <style>
-
+</head>
+<style>
 body{
   background-color: transparent;
   background-image: url("images/barber.png");
@@ -51,29 +45,29 @@ body{
 
 }
 
-  body {
+body {
   
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
    
   }
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
 .empty{
   background-color: yellow;
-height: 700px;
-width: 700px;
+  height: 700px;
+  width: 700px;
 
 }
 h4{
   font-size: 50px;
   color: white;
   /*margin-top: 80%;*/
-font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 ul{
@@ -94,72 +88,55 @@ h3{
   color:yellow;
 }
 .text, .password, .firstname, .lastname {
-  color:yellow;
+  color:white;
 }
 
-
-
-
 </style>
-
-
-
-  <!-- <body> -->
-
-    
-
-      <div class="header clearfix">
-      <h3>Rush Hour</h3>
-        <nav>
-          <ul class="nav nav-pills float-right">
-          {{#if user}}
-            <li class="nav-item"><a class="nav-link active" href="/">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/users/logout">Logout</a></li>
-            {{else}}
-            <li class="nav-item"><a class="nav-link active"  href="/dashboard">Login</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/signup">Register</a></li>
-            {{/if}}
-            
-          </ul>
-        </nav>
-        <!-- <h3 class="text-muted" id="logo">Rush Hour</h3> -->
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          {{!-- {{{body}}} --}}<center>
-        <div class="row">
-          <img src="bbs.jpg">
-        </div>
-      </center>
-        </div>
-
-        
-      </div>
-
+<body>
+<div class="header clearfix">
+  <h3>Rush Hour</h3>
+    <nav>
+      <ul class="nav nav-pills float-right">
+      {{#if user}}
+        <li class="nav-item"><a class="nav-link active" href="/">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/users/logout">Logout</a></li>
+      {{else}}
+        <li class="nav-item"><a class="nav-link active"  href="/dashboard">Login</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/signup">Register</a></li>
+      {{/if}}
+      </ul>
+    </nav>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    {{!-- {{{body}}} --}}<center>
+    <div class="row">
+      <img src="bbs.jpg">
     </div>
-
-    <form id="signup" name="signup" method="post" action="/signup">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="email" />
-        <label for="firstname">Firstname</label>
-        <input class="firstname" name="firstname" type="text" />
-        <label for="lastname">Lastname</label>
-        <input class="lastname" name="lastname" type="text" />
-        <label for="password">Password</label>
-        <input class="password" name="password" type="password" />
-        <input class="btn" type="submit" value="Sign Up"/>
-    </form> <!-- /container -->
+    </center>
+  </div>
+</div>
+</div>
+<form id="signup" name="signup" method="post" action="/signup">
+  <label for="email">Email Address</label>
+  <input class="text" name="email" type="email" />
+  <label for="firstname">Firstname</label>
+  <input class="firstname" name="firstname" type="text" />
+  <label for="lastname">Lastname</label>
+  <input class="lastname" name="lastname" type="text" />
+  <label for="password">Password</label>
+  <input class="password" name="password" type="password" />
+  <input class="btn" type="submit" value="Sign Up"/>
+</form> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <footer class="footer">
-        <p>&copy; Rush Hour 2017</p>
-      </footer>
+<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<footer class="footer">
+    <p>&copy; Rush Hour 2017</p>
+</footer>
   </body>
 </html>
