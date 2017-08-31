@@ -51,6 +51,14 @@ app.get("/", function(req, res) {
 
         })
     });
+
+    // app.get("/times", function(req, res){
+    //   db.appointments.findAll({
+    //     day: '2017-08-28'
+    //   }).then(function(data){
+    //     res.send(data);
+    //   })
+    // })
     
     // routes users vs admins
     function isLoggedIn(req, res, next) {

@@ -1,58 +1,41 @@
-
-
 <!DOCTYPE html>
- 
 </html> 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Rush Hour</title>
-
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!-- Link to Custom CSS -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+  <title>Rush Hour</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script> -->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Link to Custom CSS -->
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
-
-
-
-    <!-- Custom styles for this template -->
-    <link href="/../public/css/authstyle.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/../public/css/authstyle.css" rel="stylesheet">
 </head>
 <style>
 body{
-  background-color: transparent;
-  background-image: url("images/barber.png");
+  background-color: #F4F2F2;
+/*  background-image: url("images/barber.png");*/
 
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 body {
-  
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-   
-  }
+}
 
 main {
   flex: 1 0 auto;
@@ -61,7 +44,6 @@ main {
   background-color: yellow;
   height: 700px;
   width: 700px;
-
 }
 h4{
   font-size: 50px;
@@ -69,30 +51,42 @@ h4{
   /*margin-top: 80%;*/
   font-family: 'Pacifico', cursive;
 }
-
-ul{
+/*ul{
   background-color: teal;
-}
+}*/
 nav{
   background-color:transparent;
-
 }
 .text-muted{
   color:yellow;
 }
 h3{
-  color:white;
+  color:teal;
   margin-top: 30px;
+  text-align: center;
 }
 .login{
-  color:yellow;
+  color:teal;
 }
 .text, .password, .firstname, .lastname {
   color:white;
 }
+nav{
+  background-color:#00CEB7;
+}
+.text{
+  color:teal;
+}
+.btn{
+  margin-left: 40px;
+}
+.container{
+  text-align: center;
+}
 
 </style>
 <body>
+<main>
 <div class="header clearfix">
   <h3>Rush Hour</h3>
     <nav>
@@ -111,32 +105,67 @@ h3{
   <div class="col-lg-12">
     {{!-- {{{body}}} --}}<center>
     <div class="row">
-      <img src="bbs.jpg">
+      <!-- <img src="bbs.jpg"> -->
     </div>
     </center>
   </div>
 </div>
-</div>
+
+
 <form id="signup" name="signup" method="post" action="/signup">
-  <label for="email">Email Address</label>
-  <input class="text" name="email" type="email" />
-  <label for="firstname">Firstname</label>
-  <input class="firstname" name="firstname" type="text" />
-  <label for="lastname">Lastname</label>
-  <input class="lastname" name="lastname" type="text" />
-  <label for="password">Password</label>
-  <input class="password" name="password" type="password" />
+  <div class="row">
+    <form class="col s12">
+      <div class="row" id="firstname">
+        <div class="input-field col s6">
+          <label for="firstname"></label>
+          <input placeholder="Frist Name" class="text" name="firstname" type="text" />
+        </div>
+      </div> 
+      <div class="row" id="lastname">
+        <div class="input-field col s6">   
+          <label for="lastname"></label>
+          <input placeholder="Last Name"  class="text" name="lastname" type="text" />
+        </div>
+      </div>
+      <div class="row" id="email">
+        <div class="input-field col s6">
+          <label for="email"></label>
+          <input placeholder="Email Adress" class="text" name="email" type="email" />
+        </div>
+      </div>
+      <div class="row" id="password">
+        <div class="input-field col s6">     
+          <label for="password"></label>
+          <input placeholder="Password" class="text" name="password" type="password" />
+        </div>
+      </div>
+    </form>
   <input class="btn" type="submit" value="Sign Up"/>
-</form> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</form> 
+</main>
 <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
-<footer class="footer">
-    <p>&copy; Rush Hour 2017</p>
+<footer class="page-footer teal accent-4">
+    <div class="container teal accent-4">
+      <div class="row">
+        <div class="col l6 s12">
+          <h9 class="white-text">Rush Hour</h9>
+            <p class="grey-text text-lighten-4">Automate your busy schedule!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://morning-tundra-29866.herokuapp.com/signin">RushHour</a></li>
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal">
+      <div class="container">
+        © 2017 Copyright 
+        <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+      </div>
+    </div>
 </footer>
   </body>
 </html>

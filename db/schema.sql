@@ -12,3 +12,5 @@ CREATE DATABASE sequelize_passport;
 -- NOTE: If you completed the readme, both of these steps were done when you ran...
 npm run setupDB
 
+
+
